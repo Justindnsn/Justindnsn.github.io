@@ -4,21 +4,31 @@
         <meta charset="utf-8"/>
         <meta name="viewpoint" content="width=device-width" initial-scale="1.0"/>
         <style>
-            li a, dr
             .dropdown {
                 position: relative;
+                display: inline-block;
+            }
+            li.dropdown {
                 display: inline-block;
             }
             .dropdown-content {
                 right: 0;
                 display: none;
-
-            }
-            .dropdown-content a:hover {
-                background-color: rgb(50, 140, 50);
+                position: fixed;
+                background-color: rgb(100, 167, 100);
+                z-index: 1;
+                padding: 0;
             }
             .dropdown:hover .dropdown-content {
                 display: block;
+            }
+            .dropdown-content a {
+                display: block;
+                text-decoration: none;
+                color: black;
+            }
+            .dropdown-content a:hover {
+                background-color: rgb(50, 140, 50);
             }
             body {
                 background-color: darkseagreen;
@@ -29,7 +39,6 @@
                 color: whitesmoke;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 font-size: 3vw;
-                font-display: ;
                 border-style: groove;
                 list-style-type: none;
                 margin: 0;
@@ -75,7 +84,7 @@
             <li><a href="./Popular.html">Popular</a></li>
             <li><a href="./About.html">About</a></li>
             <li class="dropdown" style="float:right">
-                    <a class="dropbtn"><img src="null.png" height="40vw"></a>
+                    <a><img src="null.png" height="30vw" width="30vw"></a>
                         <div class="dropdown-content">
                             <a href="./Sign in.html">Sign In</a>
                             <a href="./My Recipes.html">My Recipe</a>

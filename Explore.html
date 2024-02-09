@@ -1,43 +1,99 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
+    <head> <!--does not show in browser-->
         <meta charset="utf-8"/>
-        <meta name="viewpoint" content="width=device-width" />
+        <meta name="viewpoint" content="width=device-width" initial-scale="1.0"/>
         <style>
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            li.dropdown {
+                display: inline-block;
+            }
+            .dropdown-content {
+                right: 0;
+                display: none;
+                position: fixed;
+                background-color: rgb(100, 167, 100);
+                z-index: 1;
+                padding: 0;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .dropdown-content a {
+                display: block;
+                text-decoration: none;
+                color: black;
+            }
+            .dropdown-content a:hover {
+                background-color: rgb(50, 140, 50);
+            }
             body {
                 background-color: darkseagreen;
-                
+                background-image: url("floating-leafs.png");
+                background-size: 750px;
             }
             ul {
                 color: whitesmoke;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-size: 2em;
+                font-size: 3vw;
                 border-style: groove;
                 list-style-type: none;
                 margin: 0;
                 overflow: hidden;
                 padding: 0;
+                background-color: rgb(100, 167, 100);
+                opacity: .9;
+                overflow: hidden;
                 }
             li {
                 float: left;
             }
             li a {
+                vertical-align: middle;
                 display: block;
-                padding: 40px;
+                padding: 3vw;
+                height: 5vw;
             }
             li a:hover{
-                background-color: rgb(127, 167, 127);
+                background-color: rgb(50, 140, 50);
             }
-        </style>
+            h1 {
+                background-color: rgb(100, 167, 100);
+            }
+            h2 {
+                block-size: 20vw;
+                align-items: center;
+            }
+            p {
+                vertical-align: sub;
+            }
 
+        </style>
+        <title>Culinary Compass</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
     </head>
 
+    <Body>
 
-    <body>
         <ul>
-           <li><a href="./Index.html">Culinary Compass</a></li>
+            <li><a href="./Index.html">Culinary Compass</a></li>
             <li><a href="./Explore.html">Explore</a></li>
             <li><a href="./Popular.html">Popular</a></li>
-            <li><a href="./About.html">About</a></li>  </ul>
+            <li><a href="./About.html">About</a></li>
+            <li class="dropdown" style="float:right">
+                    <a><img src="null.png" height="30vw" width="30vw"></a>
+                        <div class="dropdown-content">
+                            <a href="./Sign in.html">Sign In</a>
+                            <a href="./My Recipes.html">My Recipe</a>
+                            <a href="./Favorites.html">Favorites</a>
+                            <a href="./Restrictions.html">Restrictions</a>
+                        </div>
+            </li>
+        </ul>
         <h1>This is the Explore page</h1>
+        <p><a href="mailto:jdenson@carroll.edu">Contact Me</a></p>
     </body>
+</html>
