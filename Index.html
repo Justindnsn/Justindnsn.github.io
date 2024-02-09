@@ -2,35 +2,69 @@
 <html lang="en-US">
     <head> <!--does not show in browser-->
         <meta charset="utf-8"/>
-        <meta name="viewpoint" content="width=device-width" />
+        <meta name="viewpoint" content="width=device-width" initial-scale="1.0"/>
         <style>
+            li a, dr
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown-content {
+                right: 0;
+                display: none;
+
+            }
+            .dropdown-content a:hover {
+                background-color: rgb(50, 140, 50);
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
             body {
                 background-color: darkseagreen;
-                
+                background-image: url("floating-leafs.png");
+                background-size: 750px;
             }
             ul {
                 color: whitesmoke;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-size: 2em;
+                font-size: 3vw;
+                font-display: ;
                 border-style: groove;
                 list-style-type: none;
                 margin: 0;
                 overflow: hidden;
                 padding: 0;
+                background-color: rgb(100, 167, 100);
+                opacity: .9;
+                overflow: hidden;
                 }
             li {
                 float: left;
             }
             li a {
+                vertical-align: middle;
                 display: block;
-                padding: 40px;
+                padding: 3vw;
+                height: 5vw;
             }
             li a:hover{
-                background-color: rgb(127, 167, 127);
+                background-color: rgb(50, 140, 50);
+            }
+            h1 {
+                background-color: rgb(100, 167, 100);
+            }
+            h2 {
+                block-size: 20vw;
+                align-items: center;
+            }
+            p {
+                vertical-align: sub;
             }
 
         </style>
         <title>Culinary Compass</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
     </head>
 
     <Body>
@@ -39,13 +73,22 @@
             <li><a href="./Index.html">Culinary Compass</a></li>
             <li><a href="./Explore.html">Explore</a></li>
             <li><a href="./Popular.html">Popular</a></li>
-            <li><a href="./About.html">About</a></li>  </ul>
-        <h1> </h1>
+            <li><a href="./About.html">About</a></li>
+            <li class="dropdown" style="float:right">
+                    <a class="dropbtn"><img src="null.png" height="40vw"></a>
+                        <div class="dropdown-content">
+                            <a href="./Sign in.html">Sign In</a>
+                            <a href="./My Recipes.html">My Recipe</a>
+                            <a href="./Favorites.html">Favorites</a>
+                            <a href="./Restrictions.html">Restrictions</a>
+                        </div>
+            </li>
+        </ul>
+        
+        </div>
         <h2> I hope I pass </h2>
         <div> A block of some kind</div>
-        <span> non block</span> stuff
-        <span> non block</span>
-        <span> non block</span>
+        <p><a href="mailto:jdenson@carroll.edu">Contact Me</a></p>
 
     </Body>
 </html>
