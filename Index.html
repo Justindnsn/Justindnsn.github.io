@@ -3,39 +3,55 @@
     <head> <!--does not show in browser-->
         <meta charset="utf-8"/>
         <meta name="viewpoint" content="width=device-width" initial-scale="1.0"/>
-        <style>
-            .dropdown {
-                position: relative;
-                display: inline-block;
-            }
-            li.dropdown {
-                display: inline-block;
-            }
-            .dropdown-content {
-                right: 0;
-                display: none;
-                position: fixed;
-                background-color: rgb(100, 167, 100);
-                z-index: 1;
-                padding: 0;
-            }
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-            .dropdown-content a {
-                display: block;
-                text-decoration: none;
-                color: black;
-            }
-            .dropdown-content a:hover {
-                background-color: rgb(50, 140, 50);
-            }
-            body {
-                background-color: darkseagreen;
-                background-image: url("floating-leafs.png");
-                background-size: 750px;
-            }
-            ul {
+            <style>
+                .slideshow-contianer {
+                    max-width: 1000px;
+                    position: relative;
+                    margin: auto;
+                }
+                .mySlides{
+                    display: none;
+                }
+                .fade {
+                    animation-name: fade;
+                    animation-duration: 1.5s; timing-function delay iteration-count direction fill-mode;
+                }
+                @keyframes fade {
+                    from {opacity: .4;}
+                    to {opacity: 1;}
+                }
+                .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+                li.dropdown {
+                    display: inline-block;
+                }
+                .dropdown-content {
+                    right: 0;
+                    display: none;
+                    position: fixed;
+                    background-color: rgb(100, 167, 100);
+                    z-index: 1;
+                    padding: 0;
+                }
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+                .dropdown-content a {
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                }
+                .dropdown-content a:hover {
+                    background-color: rgb(50, 140, 50);
+                }
+                body {
+                    background-color: rgb(150, 167,150);
+                    background-image: url("floral-dance-seamless.png");
+                    background-size: 500px;
+                }
+                ul {
                 color: black;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 font-size: 3vw;
@@ -46,34 +62,36 @@
                 padding: 0;
                 background-color: rgb(100, 167, 100);
                 opacity: .9;
-                overflow: hidden;
-                text-align: justify;
-                text-decoration: none;
-                }
-            li {
-                float: left;
-            }
-            li a {
-                vertical-align: middle;
-                display: block;
-                padding: 3vw;
-                height: 5vw;
-            }
-            li a:hover{
-                background-color: rgb(50, 140, 50);
-            }
-            h1 {
-                background-color: rgb(100, 167, 100);
-            }
-            h2 {
-                block-size: 20vw;
-                align-items: center;
-            }
-            p {
-                vertical-align: sub;
-            }
 
-        </style>
+                }
+                li {
+                    float: left;
+                    margin: 0;
+                }
+                li a {
+                    vertical-align: middle;
+                    display: flex;
+                    padding: 3vw;
+                    height: 5vw;
+                }
+                li a:hover{
+                    background-color: rgb(50, 140, 50);
+                }
+                h1 {
+                    background-color: rgb(100, 167, 100);
+                    text-align: center;
+                }
+                h2 {
+                    block-size: 20vw;
+                    font-size: 5vw;
+                    align-items: center;
+                    background-color: rgb(100, 167, 100);
+                }
+                p {
+                    vertical-align: sub;
+                }
+
+            </style>
         <title>Culinary Compass</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
     </head>
@@ -95,11 +113,39 @@
                         </div>
             </li>
         </ul>
-        
+        <form style="float: right;">
+            <input type="text" name="Search" placeholder="Search">
+            <button type="submit"><img src="Search.png" style="width: 12px;"></button>
+        </form>
+        <h1 style="text-align: center;">Recent</h1>
+        <div class="slideshow-container">
+            <div class="myslides fade">
+                <img src="Grilled Cheese.jpg" style="width: 80%;">
+            </div>
+            <div>
+                <img src="stir fry.jpg" style="width: 80%;">
+            </div>
         </div>
         <h2> I hope I pass </h2>
         <div> A block of some kind</div>
-        <footer><a href="mailto:jdenson@carroll.edu">Contact Me</a></footer>
-
+        <footer>
+            <a href="mailto:jdenson@carroll.edu">Contact Me</a>
+        </footer>
+        <script>
+            let slideIndex = 0:
+            showSlides();
+            function showSlides(i) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) slideIndex = 1
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 2000)
+            }
+            showSlides(0);
+        </scrpit>
     </Body>
 </html>
