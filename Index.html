@@ -3,7 +3,9 @@
     <head> <!--does not show in browser-->
         <meta charset="utf-8"/>
         <meta name="viewpoint" content="width=device-width" initial-scale="1.0"/>
-            <style>
+           <!--sets veiw for mobile^^-->
+           
+           <style>
                 .slideshow-contianer {
                     max-width: 1000px;
                     position: relative;
@@ -49,7 +51,8 @@
                 body {
                     background-color: rgb(107, 69, 24);
                     background-image: url("floral-dance-seamless.png");
-                    background-size: 500px;
+                    background-size: 60rem;
+                    height: 100dvw;
                 }
                 ul {
                 color: white;
@@ -112,6 +115,7 @@
                             <a href="./My Recipes.html">My Recipe</a>
                             <a href="./Favorites.html">Favorites</a>
                             <a href="./Restrictions.html">Restrictions</a>
+                            <a href="./wireframe.html">wireframe</a>
                         </div>
             </li>
         </ul>
@@ -147,7 +151,7 @@
             slideIndex++;
             if (slideIndex > slides.length) {slideIndex = 1}
             slides[slideIndex-1].style.display = "block";
-            setTimeout(showSlides, 2000);
+            setTimeout(showSlides, 2);
         }
         showSlides()
     </scrpit>
