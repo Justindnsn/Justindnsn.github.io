@@ -1,1 +1,68 @@
-/* stylesheet */
+@keyframes background {
+    from {background-position: 0;}
+    to {background-position: 0 100vw;}
+}
+
+body{
+    background-color: rgba(88, 108, 137, 0.773);
+    background-image: url(../img/floral-dance-seamless.png);
+    background-size: 40vw;
+    overflow: ;
+    margin: 0px;
+    height: 100dvw;
+}
+body#win { 
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-name: background
+    
+}
+a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 3px 3px 5px black;
+}
+nav #Nav {
+    width: 100%;
+    margin: 0%;
+    background-color: rgba(62, 125, 241, 0.741);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: bold;
+    font-size: 3vw;
+}
+ul {
+   margin: 0;
+   padding: 0;
+   width: 98rem;
+   
+}    
+li {
+    color: white;
+    display: inline-flex;
+    padding: 1vw 4rem;
+    text-decoration: none;
+}
+li:hover {
+    background-color: rgba(22, 71, 139, 0.741);
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+  }
+.slideshow {
+    position: relative;
+    margin: auto;
+    max-width: 500px;
+}
+.slide {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
