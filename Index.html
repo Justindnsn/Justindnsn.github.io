@@ -6,21 +6,13 @@
            <!--sets veiw for mobile^^-->
            
            <style>
-                .slideshow-contianer {
-                    max-width: 1000px;
+                .Gallery {
+                    display: flex;
+                    height: 40dvw;
+                    gap: 2vw;
                     position: relative;
-                    margin: auto;
-                }
-                .mySlides{
-                    display: none;
-                }
-                .fade {
-                    animation-name: fade;
-                    animation-duration: 1.5s; timing-function delay iteration-count direction fill-mode;
-                }
-                @keyframes fade {
-                    from {opacity: .4;}
-                    to {opacity: 1;}
+                    left: 50%;
+                    
                 }
                 .dropdown {
                     position: relative;
@@ -53,19 +45,21 @@
                     background-image: url("floral-dance-seamless.png");
                     background-size: 60rem;
                     height: 100dvw;
+                    overflow: hidden;
+                     
                 }
                 ul {
-                color: white;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-size: 3vw;
-                border-style: groove;
-                list-style-type: none;
-                margin: 0;
-                overflow: hidden;
-                padding: 0;
-                background-color: rgb(75, 41, 15);
-                opacity: .9;
-
+                    color: white;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    font-size: 3vw;
+                    border-style: groove;
+                    list-style-type: none;
+                    margin: 0;
+                    overflow: hidden;
+                    padding: 0;
+                    background-color: rgb(75, 41, 15);
+                    opacity: .9;
+                    
                 }
                 li {
                     float: left;
@@ -104,12 +98,12 @@
     <Body>
 
         <ul>
-            <li><a href="./Index.html"><img src="Logo.png" style="height: 7vw;"></a></li>
+            <li><a href="./Index.html" draggable="false"><img src="Logo.png" style="height: 7vw;" draggable="false"></a></li>
             <li><a href="Explore.html">Explore</a></li>
             <li><a href="./Popular.html">Popular</a></li>
             <li><a href="./About.html">About</a></li>
-            <li class="dropdown" style="float:right">
-                    <a><img src="null.png" style="height: 6vw;"></a>
+            <li class="dropdown" style="float:right" draggable="false">
+                    <a><img src="null.png" style="height: 6vw;" draggable="false"></a>
                         <div class="dropdown-content">
                             <a href="./Sign in.html">Sign In</a>
                             <a href="./My Recipes.html">My Recipe</a>
@@ -124,13 +118,9 @@
             <button type="submit"><img src="Search.png" style="width: 12px;"></button>
         </form>
         <h1 style="text-align: center;">Recent</h1>
-        <div class="slideshow-container">
-            <div class="myslides fade">
-                <img src="Grilled Cheese.jpg" style="width: 80%;">
-            </div>
-            <div class="mySlides fade">
-                <img src="stir fry.jpg" style="width: 80%;">
-            </div>
+        <div class="Gallery">
+            <img src="Grilled Cheese.jpg" draggable="false">
+            <img src="stir fry.jpg" draggable="false">
         </div>
         <h2> I hope I pass </h2>
         <div> A block of some kind</div>
@@ -140,19 +130,6 @@
         
     </Body>
     <script>
-        let slideIndex = 1:
-        showSlides();
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex-1].style.display = "block";
-            setTimeout(showSlides, 2);
-        }
-        showSlides()
+      
     </scrpit>
 </html>
