@@ -12,7 +12,7 @@ body{
 a {
     color: black;
     text-decoration: none;
-    text-shadow: 3px 3px 5px black;
+    text-shadow: 1px 1px 10px black;
 }
 nav #Nav {
     width: 100%;
@@ -26,26 +26,20 @@ nav #Nav {
 ul {
    margin: 0;
    padding: 0;
-   width: 98rem;
+   width: 9rem;
    
 }    
 li {
     color: black;
     display: inline-flex;
-    padding: 1vw 4rem;
+    padding: 1vw 5vw;
     text-decoration: none;
 }
 li:hover {
-    background-color: rgba(22, 71, 139, 0.741);
+    
 }
 
-.slideshow {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    margin: 0px;
-    max-width: 500px;
-    display: flex;
-    gap: 4vmin;
-    transform: translate(0%, -50%)
+.dropdown {
+    width: 2vw;
+    
 }
