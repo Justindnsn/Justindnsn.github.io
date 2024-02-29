@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    overflow: hidden auto;
+}
+header, footer{
+    text-align: center;
+    background-color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 9dvw;
+    color: blue;
+}
+main {
+    
+    background-color: blueviolet;
+    padding: 20px;
+    margin: 30px;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: green;
+    padding: 10px;
+}
+.grid-item {
+    background-color: aquamarine;
+    color: black;
+    padding: 30px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 5dvw;
+    margin: 20px;
+}
+.slideshow {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+    width: 100%;
+    background-color: blue;
+    padding: 5px;
+    overflow: scroll hidden;
+}
+.slideshow::-webkit-scrollbar {
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}

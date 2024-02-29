@@ -17,7 +17,7 @@ a {
 nav #Nav {
     width: 100%;
     margin: 0%;
-    background-color: whitesmoke;
+    height: 5dvw;
     background: linear-gradient(whitesmoke, gray);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: bold;
@@ -32,14 +32,44 @@ ul {
 li {
     color: black;
     display: inline-flex;
-    padding: 1vw 5vw;
+    padding: 1dvw 4dvw;
     text-decoration: none;
 }
 li:hover {
     
 }
-
+a img {
+    height: 3.3dvw;
+}
 .dropdown {
-    width: 2vw;
-    
+    position: relative;
+    display: inline-block;
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    right: 0;
+    display: none;
+    position: fixed;
+    background: linear-gradient(gray, rgb(87, 86, 86));
+    z-index: 1;
+    font-size: 2dvw;
+    text-align: center;
+    text-shadow: 5px 5px 3px white;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+
+}
+.dropdown-content a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 2dvw 1dvw;
+    align-content: end;
+}
+.dropdown-content a:hover {
+    background-color: gray;
 }
