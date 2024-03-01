@@ -1,62 +1,115 @@
 
 body{
-    background-color: white(88, 108, 137, 0.773);
+    background-color: white;
     background-image: url(../img/floral-dance-seamless.png);
     backdrop-filter: invert(1);
-    background-size: 40vw;
-    overflow: hidden;
+    background-size: 40dvw;
+    overflow: hidden auto;
     margin: 0px;
-    height: 100dvw;
+    height: 150dvh;
 }
-
-a {
-    color: black;
-    text-decoration: none;
-    text-shadow: 1px 1px 10px black;
+body::-webkit-scrollbar {
+    display: none;
 }
-nav #Nav {
+header, footer{
     width: 100%;
     margin: 0%;
-    height: 5dvw;
+    height: 7dvh;
     background: linear-gradient(whitesmoke, gray);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: bold;
-    font-size: 3vw;
+    font-weight: 700;
+    font-size: 3vh;
+}
+footer {
+    position: absolute;
+    bottom: 0dvw;
+}
+header a{
+    color: black;
+    text-decoration: none;
+    text-shadow: 1px 1px 20px black;
+}
+main {
+    background-color: rgba(161, 161, 161, 0.9);
+    padding: 20px;
+    margin: 75px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: green;
+    padding: 4dvh 1dvw;
+}
+.grid-item {
+    background-color: aquamarine;
+    color: black;
+    padding: 30px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 5dvh;
+    margin: 20px;
+}
+.slideshow {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    background-color: black;
+    padding: 5px;
+    overflow: scroll hidden;
+    border: 10px solid black;
+}
+.slideshow::-webkit-scrollbar {
+    display: none;
+}
+.slide {
+    width: 300px;
+    aspect-ratio: 1 / 1;
 }
 ul {
    margin: 0;
    padding: 0;
-   width: 9rem;
-   
-}    
+   width: 100%;
+   background-color: inherit;
+   padding: 1dvh 3dvw;
+}
+li img {
+    top: 6dvh;
+}
+#logo {
+    padding: 4dvh 0 0 0;
+    top: 60px;
+}
 li {
     color: black;
-    display: inline-flex;
-    padding: 1dvw 4dvw;
+    display: inline;
+    padding: 1dvh 3dvw;
     text-decoration: none;
 }
 li:hover {
     
 }
 a img {
-    height: 3.3dvw;
+    height: 4dvh;
 }
 .dropdown {
     position: relative;
     display: inline-block;
+    
 }
 li.dropdown {
-    display: inline-block;
+    display:
 }
+
 .dropdown-content {
     right: 0;
+    top: 7dvh;
     display: none;
     position: fixed;
     background: linear-gradient(gray, rgb(87, 86, 86));
     z-index: 1;
     font-size: 2dvw;
     text-align: center;
-    text-shadow: 5px 5px 3px white;
+    text-shadow: 5px 1px 3px white;
 }
 .dropdown:hover .dropdown-content {
     display: flex;

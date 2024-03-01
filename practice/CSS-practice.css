@@ -39,6 +39,7 @@ main {
     background-color: blue;
     padding: 5px;
     overflow: scroll hidden;
+    al
 }
 .slideshow::-webkit-scrollbar {
     display: none;
@@ -46,4 +47,7 @@ main {
 a {
     text-decoration: none;
     color: black;
+}
+..slide {
+    height: 100%;
 }
