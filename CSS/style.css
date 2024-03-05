@@ -67,17 +67,9 @@ main {
 }
 ul {
    margin: 0;
-   padding: 0;
-   width: 100%;
-   background-color: inherit;
-   padding: 1dvh 3dvw;
-}
-li img {
-    top: 6dvh;
 }
 #logo {
-    padding: 4dvh 0 0 0;
-    top: 60px;
+    padding:  0 0 0;
 }
 li {
     color: black;
