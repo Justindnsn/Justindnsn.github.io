@@ -21,7 +21,7 @@ header, footer{
     background: linear-gradient(Black, #5E503f);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
-    font-size: 5dvh;
+    font-size: 3dvw;
 
 }
 nav {
@@ -37,7 +37,7 @@ a {
     color: #EAE0D5;
     text-decoration: none;
     text-shadow: 5px 5px 5px black;
-    padding: 50% 0;
+    bottom: 0;
 }
 main {
     background-color: #5E503F;
@@ -79,12 +79,11 @@ main {
     aspect-ratio: 1 / 1;
 }
 ul {
+  float: right;
    margin: 0;
    height: 100%;
    padding: 0;
-   display: inline-flex;
-   
-   vertical-align: middle;
+   display: flex;
 }
 li {
     display: inline;
@@ -92,8 +91,8 @@ li {
     text-decoration: none;
     height: 100%;
 }
-li img {
-    top: 1dvh;
+.navText {
+  padding: 5dvh 3dvw;
 }
 a img {
     height: 100%;
