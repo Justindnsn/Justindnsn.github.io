@@ -102,39 +102,6 @@ main {
 	margin: 6dvh 4dvw;
 	width: 88dvw;
 }
-.grid-container {
-	display: grid;
-	grid-template-columns: auto auto;
-	background-color: #162227;
-	padding: 4dvh 1dvw;
-	margin: 2dvh 0 0 0;
-}
-.grid-item {
-	background-color: #C6AC8F;
-	padding: 3dvh 5dvw;
-	border: 2px solid black;
-	text-align: center;
-	vertical-align: middle;
-	font-size: 6vmin;
-	margin: 20px;
-	box-shadow: 3px 3px 20px inset;
-}
-.slideshow {
-	display: flex;
-	flex-wrap: nowrap;
-	gap: 15px;
-	background-color: black;
-	padding: 5px;
-	overflow: scroll hidden;
-	border: 10px solid black;
-}
-.slideshow::-webkit-scrollbar {
-	display: none;
-}
-.slide {
-	width: 300px;
-	aspect-ratio: 1 / 1;
-}
 title {
 	width: 100px;
 	border:  15px solid black;
